@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Patrick";
+    src: url("PatrickHand-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Patrick;
+}
+
+.central {
+    width: 90%;
+    border: solid 1px black;
+    box-shadow: 10px 10px 10px black;
+    min-height: 750px;
+    margin: 0 auto;
+}
+
+.img-grd {
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: solid 6px black ;
+}
+
+.img-grd img {
+    height: inherit;
+}
+
+.mini {
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini div {
+    text-align: center;
+    cursor: pointer;
+    width: 22%;
+    padding: 10px;
+   
+}
+
+.mini div img {
+    width: 80%;
+}

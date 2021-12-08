@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Glitch_Pop.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Glitch Pop</title>
+    <script>
+        $(document).ready(function (retorno) {
+          $('.mini div').click(function(){
+              foto = $(this).children('img');
+              end = $(foto[0]).attr('src');
+              end = end.replace ('small', 'large');
+              $('#fotoGrande').attr('src', end);
+              $('.mini div').slideDown(500);
+              $(this).slideUp(1000);
+              console.log(end);
+          })
+          
+
+        });
+   </script>
+    
+</head>
+
+
+<body>
+    <div class="central">
+       <div class="img-grd">
+           <img src= "Efeito_Glitch.jpg" alt=""
+            id="fotoGrande">
+        </div>
+
+        <div class="mini">
+            <div>
+                <img src="glitchpop1.jpg" alt="">
+            </div>
+            <div>
+                <img src="glitchpop2.jpg" alt="">
+            </div>
+            <div>
+                <img src="glitchpop3.jpg" alt="">
+            </div>
+            <div>
+                <img src="Efeito_Glitch.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+
+</html>
